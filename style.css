@@ -1,0 +1,541 @@
+/* common styles */
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+.btn-primary {
+  border-radius: 48px;
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+  );
+  padding: 20px 40px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
+}
+.section-description {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px;
+}
+.banner-1-img,
+.banner-2-img,
+.instant-play-full-image,
+.play-game-full-image,
+.career-image {
+  width: 100%;
+}
+/* header section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 240px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0%;
+}
+.logo img {
+  width: 86.041px;
+  height: 40px;
+  margin-right: 20px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.fa-brands {
+  width: 33.916px;
+  height: 24px;
+}
+#social-icon {
+  padding: 15px 20px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+}
+nav ul li {
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: #3c354f;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+/* Banner-1 */
+.banner-1 {
+  background-image: url("images/Group\ 14.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner-content-1 h3 {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.banner-content-1 h2 {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+/* Banner-2 */
+.banner-2 {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 72px;
+  padding: 20px 230px 128px 230px;
+}
+.gammer-content {
+  text-align: end;
+}
+/* main section */
+.main-section {
+  max-width: 1440px;
+  margin: 50px auto;
+}
+/*Online Funny Videos section */
+.funny-videos {
+  text-align: center;
+}
+.videos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.video > img {
+  width: 100%;
+}
+
+/* Container for the image and text */
+/* Image-container */
+.video {
+  position: relative;
+}
+.video > img:hover {
+  border-radius: 20px;
+  border: 3px solid red;
+  cursor: pointer;
+  filter: brightness(
+    0.5
+  ); /*Darken image on hover: Adjust the brightness value as needed (0.7 darkens the image) */
+}
+/* Style for the "Watch Now" text */
+.video .watch-now-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Background color for the text */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none; /* Hide the text by default */
+}
+/* Style for the video player button */
+.video .video-button {
+  position: absolute;
+  top: 40%; /* Adjust the vertical position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Background color for the button */
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none; /* Hide the button by default */
+}
+/*Show the "Watch Now" text and video player button on hover */
+.video:hover .watch-now-text {
+  display: block;
+}
+.video:hover .video-button {
+  display: block;
+}
+/* Play Instantly Section */
+.play-instantly {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 220px;
+}
+.play-instantly-content {
+  text-align: end;
+  /* margin-right: 200px; */
+}
+
+.relative-img1 {
+  width: 50%;
+  position: relative;
+  right: 155px;
+  bottom: 295px;
+  border-radius: 8px;
+  border: 10px solid #fff;
+  background: url(<path-to-image>),
+    lightgray 0px -0.304px / 100% 117.229% no-repeat;
+}
+
+/* Play Game-Section */
+.play-game {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 220px;
+}
+.relative-img2 {
+  width: 50%;
+  position: relative;
+  bottom: 189px;
+  left: 396px;
+  border-radius: 8px;
+  border: 10px solid #fff;
+  background: url(<path-to-image>),
+    lightgray -7.209px 0px / 114.78% 100% no-repeat;
+}
+
+/* Career Section */
+
+.career {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.career-content {
+  padding-left: 240px;
+  width: 100%;
+}
+.career-title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+.career-sub-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.career-details {
+  display: flex;
+  color: #fff;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+#left-text {
+  text-align: start;
+}
+#right-text {
+  text-align: end;
+}
+.career-btn {
+  border-radius: 48px;
+  background: #fff;
+  padding: 21px 40px;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0px;
+  color: #ff42a5;
+}
+.career-img-container {
+  width: 100%;
+}
+/* Button section */
+.btn-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 100px 240px;
+  gap: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 13.13%,
+    rgba(255, 66, 165, 0.03) 87.94%
+  );
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #0b0223;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50px;
+  background: #fff;
+}
+.btn:hover {
+  color: #f948b2;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+/* Footer section */
+footer {
+  background: #0b0223;
+  height: 400px;
+  padding: 100px 5px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0%;
+}
+.footer-logo img {
+  width: 86.041px;
+  height: 40px;
+  margin-right: 20px;
+}
+.footer-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 60px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-sub-container {
+  display: flex;
+  gap: 40px;
+}
+.social-icons {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons i {
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+}
+.terms-conditions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #ffffff99;
+}
+.copy-right {
+  color: #ffffff99;
+  text-align: center;
+}
+/* Mobile Responsive Devices */
+@media screen and (max-width: 767px) {
+  nav,
+  nav ul,
+  .banner-1,
+  .banner-2,
+  .play-instantly,
+  .play-game,
+  .career,
+  .footer-title-container {
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 10px;
+  }
+  .videos {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  /* Banner-2 */
+
+  .play-game {
+    flex-direction: column-reverse;
+    padding: 10px 10px ;
+    text-align: center;
+  } 
+  .gammer-content,
+  .play-instantly-content {
+    text-align: center;
+  }
+
+  /* Play Instantly Section */
+  .instant-play-image {
+    width: 100%;
+  }
+  .instant-play-full-image {
+    width: 70%;
+    margin-left: 100px;
+  }
+  .relative-img1 {
+    width: 40%;
+    right: -10px;
+    bottom: 125px;
+  }
+  /* Play Game-Section */
+  .play-game-full-image {
+    width: 70%;
+    margin-right: 100px;
+  }
+  .relative-img2 {
+    width: 40%;
+    bottom: 95px;
+    left: 101px;
+  }
+  /* Career Section */
+  .career-content {
+    padding: 5px;
+  }
+  /* Button section */
+  .btn-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 10px;
+    gap: 10px;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #0b0223;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 30px;
+    background: #fff;
+  }
+  .btn > img {
+    width: 40px;
+    height: 40px;
+  }
+  /* Footer section */
+  footer {
+    height: 300px;
+    padding: 50px 5px;
+  }
+
+  .footer-logo h2 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .footer-logo img {
+    width: 56.041px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+/* Tablet responsive devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  nav,
+  .banner-1,
+  .play-instantly,
+  .career,
+  .footer-title-container {
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 10px;
+  }
+  .videos {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  /* Banner-2 */
+  .banner-2,
+  .play-game {
+    flex-direction: column-reverse;
+    padding: 20px 20px 28px 20px;
+  }
+  .gammer-content,
+  .play-instantly-content {
+    text-align: center;
+  }
+  .video > img {
+    width: 80%;
+  }
+  /* Play Instantly Section */
+  .instant-play-image {
+    width: 100%;
+  }
+  .instant-play-full-image {
+    width: 70%;
+    margin-left: 100px;
+  }
+  .relative-img1 {
+    width: 40%;
+    right: -10px;
+    bottom: 125px;
+  }
+  /* Play Game-Section */
+  .play-game-full-image {
+    width: 80%;
+    margin-right: 100px;
+  }
+  .relative-img2 {
+    width: 45%;
+    bottom: 195px;
+    left: 381px;
+  }
+  /* Career Section */
+  .career-content {
+    padding: 5px;
+  }
+  /* Button section */
+  .btn-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 10px;
+    gap: 15px;
+  }
+  .btn {
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 40px;
+  }
+}
